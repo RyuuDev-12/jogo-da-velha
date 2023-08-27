@@ -9,8 +9,8 @@
 <body>
     <h1>Jogo da Velha</h1>
     <main id="container">
-        <button class="btn" id="campo">x</button>
-        <button class="btn" id="campo2">o</button>
+        <button class="btn" id="campo"></button>
+        <button class="btn" id="campo2"></button>
         <button class="btn" id="campo3"></button>
         <button class="btn" id="campo4"></button>
         <button class="btn" id="campo5"></button>
@@ -20,7 +20,18 @@
         <button class="btn" id="campo9"></button>
     </main>
     <section>
-        <h2>Turno da CPU</h2>
+        <h2>Turno do Jogador X</h2>
+        <button id="resetBtn">Reiniciar</button>
+    </section>
+    <section id="placar">
+        <div class="jogadores">
+            <h3>Jogador X</h3>
+            <p id="pontuacao-x">0</p>
+        </div>
+        <div class="jogadores">
+            <h3>Jogador O</h3>
+            <p id="pontuacao-y">0</p>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>
